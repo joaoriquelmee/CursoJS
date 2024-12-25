@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Somando Números Utilizando Seletores DOM</h1>
+    <p id="psoma"></p>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="res">O resultado será exibido aqui</div>
+
+    <h1>Identificando o Antecessor e Sucessor</h1>
+    <p>Digite um número para obter o antecessor e sucessor</p>
+    <input type="number" name="principal" id="principal">
+    <input type="button" value="Enviar" onclick="antsuc()">
+    <p id="antsuc"></p>
+
+    <h1>Configurando Eventos DOM</h1>
+    <p id="p1"></p>  
+
+    <h2>Eventos com Listeners</h2>
+    <div id="area">
+        Interaja...
+    </div>
+
+    <h2>Eventos pelo HTML</h2>
+    <div id="area2"  onclick="clicar2()" onmouseenter="entrar2()" onmouseout="sair2()"> 
+        Interaja...
+    </div>
+
+    <h1>Estruturas Condicionais</h1>
+    <h3>If, Else</h3>
+    <p id="askcountry">Informe o seu País de origem</p>
+    País de origem: <input type="text" name="país" id="ipaís" placeholder="Seu país">
+    <input type="button" value="Verificar" onclick="verifycountry()">
+    <div id="txtpaís">
+
+    </div>
+
+    <h1>Validações em JavaScript</h1>
+                <fieldset>
+                    <legend>
+                        Dados Pessoais
+                    </legend>
+                    <p>
+                        <label for="iname" class="labelsform">Nome:</label>
+                        <input type="text" name="nomev" id="iname" class="inputsflex" placeholder="maior que 3 caracteres" minlength="3" required>
+                    </p>
+                    <p>
+                        <label for="iage" class="labelsform">Idade:</label>
+                        <input type="number" name="" id="iage" class="inputsflex" placeholder="entre 0 e 120" min="0" max="120" required>
+                    </p>
+                    <p>
+                        <label for="isal" class="labelsform">Salário:</label>
+                        <input type="number" name="" id="isal" class="inputsflex" placeholder="Valor deve ser maior que zero" min="1" required>
+                    </p>
+                    <p>
+                        <label for="igen" class="labelsform">Sexo:</label>
+                        <input type="text" name="sexo" id="igen" class="inputsflex" placeholder="Feminino ou Masculino" required>
+                    </p>
+                    <p>
+                        <label for="icivil" class="labelsform">Estado Civil:</label>
+                        <input type="text" name="civil" id="icivil" class="inputsflex" placeholder="Solteiro(a) - Casado(a) - Viúvo(a) - Divorciado(a)" required>
+                    </p>
+                    <p>
+                        <input type="submit" value="Enviar Dados" id="buttonform" onclick="checkdata()">
+                    </p>
+                </fieldset>
+    <p id="pformresp">
+
+    </p>
+
+    <script src="index.js"></script>
+</body>
+</html>
